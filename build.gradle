@@ -26,10 +26,10 @@ publishing {
         }
     }
     publications {
-            register<MavenPublication>("gpr") {
-                from(components["java"])
-            }
+        register<MavenPublication>("gpr") {
+            from(components["java"])
         }
+    }
     // publications {
     //     mavenJava(MavenPublication) {
     //         groupId = "ai.sapper.cdc"
@@ -121,10 +121,10 @@ subprojects {
         }
     }
     publications {
-            register<MavenPublication>("gpr") {
-                from(components["java"])
-            }
+        register<MavenPublication>("gpr") {
+            from(components["java"])
         }
+    }
 
     dependencies {
         // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
