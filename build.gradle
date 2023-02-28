@@ -26,8 +26,8 @@ publishing {
         }
     }
     publications {
-        register<MavenPublication>("gpr") {
-            from(components["java"])
+        gpr(MavenPublication) {
+            from(components.java)
         }
     }
     // publications {
@@ -121,8 +121,8 @@ subprojects {
         }
     }
     publications {
-        register<MavenPublication>("gpr") {
-            from(components["java"])
+        gpr(MavenPublication) {
+            from(components.java)
         }
     }
 
