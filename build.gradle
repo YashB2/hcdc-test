@@ -13,7 +13,6 @@ repositories {
 group 'ai.sapper.cdc'
 version '1.2-SNAPSHOT'
 
-
 publishing {
 
     repositories {
@@ -26,7 +25,11 @@ publishing {
             }
         }
     }
-
+    publications {
+            register<MavenPublication>("gpr") {
+                from(components["java"])
+            }
+        }
     // publications {
     //     mavenJava(MavenPublication) {
     //         groupId = "ai.sapper.cdc"
@@ -91,6 +94,7 @@ subprojects {
         }
     }
 
+
     publishing {
         // publications {
         //     "$project.name"(MavenPublication) {
@@ -116,6 +120,11 @@ subprojects {
             // }
         }
     }
+    publications {
+            register<MavenPublication>("gpr") {
+                from(components["java"])
+            }
+        }
 
     dependencies {
         // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
