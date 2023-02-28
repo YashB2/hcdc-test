@@ -27,31 +27,31 @@ publishing {
         }
     }
 
-    publications {
-        mavenJava(MavenPublication) {
-            groupId = "ai.sapper.cdc"
-            from components.java
+    // publications {
+    //     mavenJava(MavenPublication) {
+    //         groupId = "ai.sapper.cdc"
+    //         from components.java
 
-            pom {
-                name = 'Sapper CDC Loader'
-                description = 'Data Loader Framework for CDC'
-                url = 'https://sapper.ai'
+    //         pom {
+    //             name = 'Sapper CDC Loader'
+    //             description = 'Data Loader Framework for CDC'
+    //             url = 'https://sapper.ai'
 
-                developers {
-                    developer {
-                        id = 'subhagho'
-                        name = 'Subho Ghosh'
-                        email = 'subho.ghosh@outlook.com'
-                    }
-                }
-                scm {
-                    connection = 'scm:git:git@github.com:subhagho/cdc-loader.git'
-                    developerConnection = 'scm:git:git@github.com:subhagho/cdc-loader.git'
-                    url = 'https://sapper.ai'
-                }
-            }
-        }
-    }
+    //             developers {
+    //                 developer {
+    //                     id = 'subhagho'
+    //                     name = 'Subho Ghosh'
+    //                     email = 'subho.ghosh@outlook.com'
+    //                 }
+    //             }
+    //             scm {
+    //                 connection = 'scm:git:git@github.com:subhagho/cdc-loader.git'
+    //                 developerConnection = 'scm:git:git@github.com:subhagho/cdc-loader.git'
+    //                 url = 'https://sapper.ai'
+    //             }
+    //         }
+    //     }
+    // }
 
 }
 
