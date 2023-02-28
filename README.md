@@ -8,7 +8,7 @@
 [Configuration Sample](namenode-agent/src/test/resources/configs/namenode-agent.xml)
 
 - Arguments:
-  - JVM: 
+  - JVM : 
   
     `-Dlog4j.configurationFile=<log4j Config Path>`
   - Program: 
