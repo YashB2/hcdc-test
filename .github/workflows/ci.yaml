@@ -4,9 +4,9 @@ on: push
 jobs:
   publish:
     runs-on: ubuntu-latest 
-    defaults:
-      run:
-        working-directory: ./change-manager
+    # defaults:
+    #   run:
+    #     working-directory: ./change-manager
     permissions: 
       contents: read
       packages: write 
@@ -38,7 +38,7 @@ jobs:
         uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
         with:
           arguments: publish
-          gradle-executable: ./change-manager/gradle/wrapper/gradle-wrapper.properties
+          # gradle-executable: ./change-manager/gradle/wrapper/gradle-wrapper.properties
         # working-directory: 
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
