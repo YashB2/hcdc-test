@@ -121,12 +121,13 @@ subprojects {
             //     url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
             // }
         }
-    }
-    publications {
-        gpr(MavenPublication) {
-            from(components.java)
+        publications {
+            gpr(MavenPublication) {
+                from(components.java)
+            }
         }
     }
+ 
 
     dependencies {
         // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
