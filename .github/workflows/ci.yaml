@@ -16,8 +16,10 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
       - name: Graddle wrapper
-        run: graddle wrapper
+        run: gradle wrapper
       - name: Validate Gradle wrapper
         uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
       - name: Publish package
